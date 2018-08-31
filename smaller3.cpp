@@ -23,7 +23,7 @@ if(first > second && second > third){
 else if(first > second && second < third){
   cout << "The smaller of the three is " << second << endl;
 }
-else if (first < second && second > third{
+else if (first < second && second > third){
   cout << "The smaller of the three is " << first << endl;
 }
 else if (first > third){
