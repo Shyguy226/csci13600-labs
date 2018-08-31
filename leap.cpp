@@ -5,6 +5,7 @@ Instructor: Mr. Zamanksy
 Assignment: Lab1C
 
 This program will tell the user if the year they inputted is a leap year.
+
 */
 #include <iostream>
 using namespace std;
