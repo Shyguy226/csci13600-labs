@@ -14,7 +14,7 @@ cout << "Please enter a year: " << endl;
 int year = 0;
 cin >> year;
 if (year%4==0){
-  if(year%100==0){
+  if(year%100==0 && year % 400 != 0){
     cout << "Common year" << endl;
     }
   else {
