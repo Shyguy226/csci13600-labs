@@ -17,7 +17,7 @@ int main {
   cout << "Please enter U: " << endl;
   int u = 0;
   cin >> u;
-  cout << "/n" << endl;
+  cout << "\n" << endl;
   for (int i = l; i < u; i++){
     cout << i << " ";
     }
