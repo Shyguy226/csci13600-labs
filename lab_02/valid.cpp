@@ -26,4 +26,5 @@ int main {
       }
     }
   cout << "Number squared is " << pow(num, 2) << endl;
+  return 0;
 }
