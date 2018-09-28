@@ -4,7 +4,7 @@
 #include <string>
 #include <iostream>
 
-std::string reverse_order (std::string date1, std::string date2, std::string file_name);
+std::string reverse_order (std::string file_name);
 
 int main (){
 	std::cout << reverse_order("Current_Reservoir_Levels.tsv") << std::endl;
@@ -17,7 +17,6 @@ std::string reverse_order(std::string file_name){
 	std::cin >> date2;
 	double values[365];
 	std::string dates[365];
-	std::string ans;
 	int counter = 0;
 	bool zone = false;
 	double garb1, garb2, garb3, west;
@@ -30,7 +29,7 @@ std::string reverse_order(std::string file_name){
 		exit(1);
 	}
 	while (fin >> open >> garb1 >> garb2 >> garb3 >> west){
-	  if (open==date){
+	  if (open==date1){
 	    zone = true;
 	  }
 	  if (zone){
@@ -45,7 +44,9 @@ std::string reverse_order(std::string file_name){
 	  fin.ignore(INT_MAX, '\n');
 	}
 	for (int i = counter-1; i >= 0; i--){
-		ans += dates[i] + " " + (std::string)(values[i]) + "ft\n";
+	  std::cout << dates[i] + " ";
+	  std::cout << values[i];
+	  std::cout << "ft\n";
 	}
-	return ans;
 }
+
